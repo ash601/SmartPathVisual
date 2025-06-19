@@ -1,0 +1,60 @@
+body {
+    background-color: #111;
+    color: #fff;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#root {
+    height: 100%;
+}
+.mapboxgl-canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-top {
+    position: fixed;
+    left: 0;
+    top: 16px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Container doesn't take clicks, children (IconButton) will */
+}
+
+.nav-top > button {
+    pointer-events: all;
+}
+
+.Mui-disabled {
+    filter: saturate(0);
+}
+
+.attrib-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: slight background for readability */
+    padding: 2px 5px; /* Optional: padding */
+
+    .maplibregl-ctrl-attrib-button {
+        display: none; /* Default button is hidden */
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
